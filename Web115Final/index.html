@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ruiz-Serrano</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" crossorigin="anonymous" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        crossorigin="anonymous" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13">
+        </script>
+        <link href="CSS/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="content">
+        <h1>Ruiz-Serrano</h1>
+        <div class="container-fluid content">
+            <div class="row">
+                <a class="col-lg active" href="index.html">Home</a>
+                <a class="col-lg" href="Sub_HTML/webSamples.html">Website Samples</a>
+                <a class="col-lg" href="Sub_HTML/programSamples.html">Non-website Samples</a>
+            </div>
+        </div>
+
+        <div>
+            <p>My name is Alejandro Ruiz-Serrano and I am a 
+            web-developer/programmer with various other skills built up
+            throughout the years. The graphic below is an example of some of my non web or programming related work,
+            a photo of myself overlaid with various different images. Also included below is a photo of me without the overlays.
+            <br><img src="Images/RuizOverlay.png" sizes="(max-width: 500px) 15vh, 25vh" srcset="Images/RuizOverlay.png 453w" alt="Graphic portrait of Alejandro
+            Ruiz-Serrano with a space background and images overlaid over him in sections such as black roses over the hair,
+            a gradient for the face, and wires for the mask."><br>
+            <img src="Images/proffessPhoto.jpg" sizes="(max-width: 500px) 5vh, 8vh" srcset="Images/proffessPhoto.jpg 607w" alt="Photo of Alejandro in front of flowers from the shoulders up.">
+            <br></p>
+            <p style="text-align: left; margin-left: 5px;">My skills include:</p>
+            <ul>
+                <li>HTML, CSS, and java for websites(Such as this website)</li>
+                <li>Programming with python</li>
+                <li>Creating databases with proper relations and normal forms</li>
+                <li>Using the linux terminal's commands and creating bash scripts</li>
+            </ul>
+            <p>I hope to be able to find an internship so I can continue to study in college
+            to acquire more skills while also finding real practical applications for everything
+            I've learned. In the meantime I enjoy using these skills in personal projects such as
+            creating games or helping friends with managing data for their fighting game tournaments.</p>
+        </div>
+
+
+
+
+
+        <div class="container-fluid footer">
+            <p>Contact Information:</p>
+            <ul>
+                <li>Email - alejandroruizserrano54@gmail.com</li>
+                <li>Phone - (919)-880-8378</li>
+                <li>Area - NC, US</li>
+            </ul>
+            <div class="contact">
+                <p>Contact Me:
+                <form action="" method="get">
+                    <label for="fname">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+
+                    <label for="body">Message: </label>
+                    <textarea id="body" name="body" placeholder="Type your message here"></textarea>
+
+                    <input type="submit" id="submit" name="submit">
+                </form>
+                <script>
+                    function sendMail(event) {
+                        var yourMessage = document.getElementById("body").value;
+                        var subject = document.getElementById("subject").value;
+                        var yourName = document.getElementById("name").value + ": ";
+                        var url = "mailto:alejandroruizserrano54@gmail.com?subject=" + encodeURIComponent(name) + encodeURIComponent(subject) + "&body=" + encodeURIComponent(yourMessage);
+                        document.querySelector("form").action = url;
+                    }
+                    document.getElementById("submit").addEventListener("click", sendMail(event));
+                </script>
+                </p>
+            </div>
+            <div class="row">
+                <a class="col-lg footer" href="index.html">Home</a>
+                <a class="col-lg footer" href="Sub_HTML/webSamples.html">Website Samples</a>
+                <a class="col-lg footer" href="Sub_HTML/programSamples.html">Non-website Samples</a>
+            </div>
+        </div>
+        </section>
+    </body>
+</html>
