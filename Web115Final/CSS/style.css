@@ -1,0 +1,68 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    text-align: center;
+    margin: 2%;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+body {
+    background-color: rgb(42, 61, 76);;
+    background-image: none;
+}
+a {
+    text-align: center;
+    color: black;
+}
+.content {
+    max-width: 70vw;
+    margin: auto;
+    background-color: rgb(221, 223, 255);
+}
+li {
+    font-size: 14pt;
+    text-align: center;
+}
+.footer {
+    background-color: rgb(152, 159, 255);
+    color: black;
+}
+a:hover {
+    background-color: rgb(152, 159, 255);
+    color: white;
+}
+.active {
+    background-color: rgb(152, 159, 255);
+}
+a.footer:hover {
+    color: gray;
+}
+a.footer {
+    background-color: black;
+    color: White;
+}
+@media screen and (max-width: 850px) {
+    div.contact {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .contact {
+        padding: 10px 20px 1px;
+    }
+}
+@media screen and (max-width: 500px) {
+    li {
+        font-size: 11pt;
+    }
+}
+@media screen and (max-width: 400px) {
+    li {
+        font-size: 7pt;
+    }
+}
